@@ -1,12 +1,46 @@
+html{
+    background-image: url("https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091156328-1536x960.jpg");
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    padding: 2vh;
+}
+.buttons{
+    padding: 2vh;
+}
+a{
+    display:inline-block;
+    padding:0.2em 1.45em;
+    margin:0.1em;
+    border:0.15em solid #302424;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Segoe UI','Roboto',sans-serif;
+    font-weight:400;
+    color:#141212;
+    background-color:#8b7378;
+    text-align:center;
+    position:relative;
+}
+a:hover{
+    border-color:#473c3c;
+}
+a:active{
+    background-color:#473c3c;
+}
 .container{
-    display: grid;
-    grid-template-columns: repeat(16,48px);
-    grid-template-rows: repeat(16,48px); 
+    display: inline-grid;
+    grid-template-columns: repeat(16,30px);
+    grid-template-rows: repeat(16,30px); 
+    border: 3px solid #302424;
 }
 .content{
-    background-color: black;
-    transition: background-color 500ms linear;
+    background-color: white;
 }
 .divHover{
-    background-color: crimson;
+    background-color: #000000;
 }
