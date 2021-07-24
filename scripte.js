@@ -25,6 +25,7 @@ gradient.addEventListener('click',()=>{
 });
 
 function createGrid(dim=16){
+    deleteDiv();
     const container=document.querySelector('.container');
     for(let i=0;i<dim*dim;i++){
         const content=document.createElement('div');
@@ -54,7 +55,14 @@ function hoverColor(color){
         });
     });
 }
-
+function deleteDiv(){
+    const container=document.querySelector('.container');
+    const divs=document.querySelectorAll('.container div');
+    divs.forEach(div => {
+        container.removeChild(div);
+    });
+    
+}
 function resetColor(){
     const divs=document.querySelectorAll('.container div');
     divs.forEach(div => {
